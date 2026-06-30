@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+
+# Datasets (downloaded automatically)
+data/
+
+# Experiment outputs / checkpoints / logs
+boundary_unlearn32/
+exps/
+*.pth
+*.pt
+*.log
+deepu_log*.txt
+*_training_curves.png
+
+# Environments
+.venv/
+venv/
+env/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
