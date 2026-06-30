@@ -4,7 +4,7 @@
 
 DeepU is a class-unlearning method for image classifiers. Given a model trained on the full dataset, it removes the influence of one or more target ("forget") classes while preserving accuracy on the remaining ("retain") classes.
 
-For our work we used: [Delete](https://github.com/shaaaaron/DELETE), [Model Inversion Attack](https://github.com/ffhibnese/Model-Inversion-Attack-ToolBox), and [If-GMI](https://github.com/final-solution/IF-GMI) repositories. We thank all the researchers for their contributions.
+For our work we used: [Delete](https://github.com/shaaaaron/DELETE), [Model Inversion Attack](https://github.com/ffhibnese/Model-Inversion-Attack-ToolBox), and [If-GMI](https://github.com/final-solution/IF-GMI) repositories. We thank all the researchers for their contributions. 
 
 
 This repository contains a self-contained implementation with three operations:
