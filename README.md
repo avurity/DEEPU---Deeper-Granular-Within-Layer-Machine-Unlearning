@@ -1,8 +1,11 @@
 # DeepU: Machine Unlearning
 
-> **Status:** This repository is currently a prototype release. The paper has been accepted, and the full codebase, including all baselines, ablations, and evaluation scripts described in the paper, will be added shortly. The core DeepU method below is functional and can be run end to end.
+> **Status:** This repository is currently a prototype release. The full codebase will be added shortly. The core DeepU method below is functional and can be run end to end.
 
 DeepU is a class-unlearning method for image classifiers. Given a model trained on the full dataset, it removes the influence of one or more target ("forget") classes while preserving accuracy on the remaining ("retain") classes.
+
+
+
 
 This repository contains a self-contained implementation with three operations:
 
@@ -67,3 +70,5 @@ Other useful flags:
 1. **Gradient-influence mapping**: for each layer, compare how each weight responds to the forget data vs. the retain data (signal-to-noise ratio). Weights are tagged `Non_Influential` / `Shared` / `Influential`. Results are cached under `.../deepu/mapping/`.
 2. **KMeans weight update**: influential weights beyond a distance percentile are zeroed; shared weights receive weight decay.
 3. **Retain backpropagation**: fine-tune the modified model on the retain data to recover accuracy on the classes that should be kept.
+
+We used multiple references from the following repositories: [Delete](https://github.com/shaaaaron/DELETE), [Model Inversion Attack](https://github.com/ffhibnese/Model-Inversion-Attack-ToolBox), and [If-GMI](https://github.com/final-solution/IF-GMI) to build this repository. We thank all the researchers for their contributions.
