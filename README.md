@@ -1,6 +1,6 @@
 # DeepU: Machine Unlearning
 
-> **Status:** This repository is currently a prototype release. The full codebase will be added shortly. The core DeepU method below is functional and can be run end to end.
+> **Status:** Initial release: this repository currently includes the core DeepU method, which is fully functional and runnable end to end. Remaining components from the paper will be added in upcoming updates.
 
 DeepU is a class-unlearning method for image classifiers. Given a model trained on the full dataset, it removes the influence of one or more target ("forget") classes while preserving accuracy on the remaining ("retain") classes.
 
