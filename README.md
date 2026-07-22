@@ -4,7 +4,8 @@
 
 DeepU is a class-unlearning method for image classifiers. Given a model trained on the full dataset, it removes the influence of one or more target ("forget") classes while preserving accuracy on the remaining ("retain") classes.
 
-<!-- IMAGE 1: Overview figure, e.g. Fig. 2 (targeted weight update strategy) from the paper. Suggested path: assets/deepu_overview.png Add here as: ![DeepU overview](assets/deepu_overview.png) -->
+![DeepU overview](assets/deepu-overview.png)
+*DeepU computes per-weight SNR from forget (Gf) and retain (Gr) gradients, clusters weights into influential (Winf) and shared (Wshared) categories, then applies targeted updates: influential weights are reset or perturbed, shared weights are decayed. A single backpropagation pass stabilizes inter-dependent weights across layers.*
 
 For our work we used: [Delete](https://github.com/shaaaaron/DELETE), [Model Inversion Attack](https://github.com/ffhibnese/Model-Inversion-Attack-ToolBox), and [If-GMI](https://github.com/final-solution/IF-GMI) repositories. We thank all the researchers for their contributions. 
 
