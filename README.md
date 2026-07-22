@@ -1,4 +1,4 @@
-# DeepU: Machine Unlearning
+# DeepU: Deeper-Granular-Within-Layer-Machine-Unlearning
 
 > **Status:** Initial release: this repository currently includes the core DeepU method, which is fully functional and runnable end to end. Remaining components from the paper will be added in upcoming updates.
 
